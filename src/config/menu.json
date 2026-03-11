@@ -5,41 +5,31 @@
       "url": "/"
     },
     {
+      "name": "Living Room",
+      "url": "/categories/living-room"
+    },
+    {
+      "name": "Bedroom",
+      "url": "/categories/bedroom"
+    },
+    {
+      "name": "Space Saving",
+      "url": "/categories/space-saving"
+    },
+    {
+      "name": "Buying Guides",
+      "url": "/categories/buying-guides"
+    },
+    {
       "name": "About",
       "url": "/about"
     },
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
     }
   ],
+
   "footer": [
     {
       "name": "About",
@@ -50,8 +40,8 @@
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Affiliate Disclosure",
+      "url": "/affiliate-disclosure"
     },
     {
       "name": "Privacy Policy",
