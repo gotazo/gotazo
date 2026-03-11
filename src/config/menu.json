@@ -29,26 +29,26 @@
       "url": "/contact"
     }
   ],
-
-"footer": [
-  {
-    "name": "About",
-    "url": "/about"
-  },
-  {
-    "name": "Contact",
-    "url": "/contact"
-  },
-  {
-    "name": "Affiliate Disclosure",
-    "url": "/affiliate-disclosure"
-  },
-  {
-    "name": "Privacy Policy",
-    "url": "/privacy-policy"
-  },
-  {
-    "name": "Terms & Conditions",
-    "url": "/terms"
-  }
-]
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Affiliate Disclosure",
+      "url": "/affiliate-disclosure"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    },
+    {
+      "name": "Terms & Conditions",
+      "url": "/terms"
+    }
+  ]
+}
