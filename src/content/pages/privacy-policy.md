@@ -1,20 +1,25 @@
 ---
-title: "Privacy"
-meta_title: ""
-description: "this is meta description"
-draft: false
+title: Privacy Policy
+meta_title: Privacy Policy
+description: Privacy policy for Gotazo
 ---
+
+## Privacy Policy
+
 At Gotazo, we respect your privacy.
 
-Information We Collect:
+### Information We Collect
+
 We may collect basic information such as name and email address if you contact us.
 
 We also use third-party services such as analytics tools that may collect anonymous usage data to improve our website.
 
-Cookies:
+### Cookies
+
 This website may use cookies to enhance user experience and analyze traffic.
 
-Affiliate Links:
+### Affiliate Links
+
 Some links on this website are affiliate links. Clicking them may result in tracking by the respective merchant.
 
 We do not sell or share personal data with third parties.
