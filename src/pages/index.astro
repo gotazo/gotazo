@@ -14,7 +14,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 
 <Base title="Gotazo | Smart Furniture Buying Guides">
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="section text-center">
   <div class="container max-w-3xl">
     <h1 class="text-4xl font-bold mb-4">
@@ -22,8 +22,7 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
     </h1>
 
     <p class="text-lg text-gray-600">
-      Discover compact sofas, sofa cum beds, coffee tables, and practical
-      furniture designed for small homes and 1BHK apartments.
+      Discover compact sofas, sofa cum beds, coffee tables, and practical furniture designed for small homes and 1BHK apartments.
     </p>
   </div>
 </section>
@@ -31,17 +30,19 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 <!-- FEATURED GUIDES -->
 <section class="section">
   <div class="container">
+
     <h2 class="text-2xl font-bold mb-8 text-center">
       Featured Guides
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8">
+
       <a href="/best-sofa-small-living-room" class="block p-6 border rounded-lg hover:shadow-lg">
         <h3 class="text-xl font-semibold mb-2">
           Best Sofa for Small Living Room Under ₹20,000
         </h3>
         <p class="text-gray-600">
-          Compact sofas and sofa cum beds suitable for small apartments.
+          Compact sofas designed for small apartments.
         </p>
       </a>
 
@@ -50,22 +51,62 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
           Best Budget Sofa Cum Beds for 1BHK Apartments
         </h3>
         <p class="text-gray-600">
-          Multifunctional furniture that saves space in small homes.
+          Space-saving sofa beds perfect for compact homes.
         </p>
       </a>
+
     </div>
+
   </div>
 </section>
 
-<!-- LATEST ARTICLES -->
+<!-- BROWSE CATEGORIES -->
 <section class="section">
   <div class="container">
+
+    <h2 class="text-2xl font-bold mb-8 text-center">
+      Browse Furniture Guides
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <a href="/categories/living-room" class="p-6 border rounded-lg hover:shadow-lg block">
+        <h3 class="text-xl font-semibold mb-2">Living Room</h3>
+        <p class="text-gray-600">
+          Sofas, sofa beds, coffee tables, and TV units.
+        </p>
+      </a>
+
+      <a href="/categories/bedroom" class="p-6 border rounded-lg hover:shadow-lg block">
+        <h3 class="text-xl font-semibold mb-2">Bedroom</h3>
+        <p class="text-gray-600">
+          Storage beds and compact wardrobes.
+        </p>
+      </a>
+
+      <a href="/categories/space-saving" class="p-6 border rounded-lg hover:shadow-lg block">
+        <h3 class="text-xl font-semibold mb-2">Space Saving</h3>
+        <p class="text-gray-600">
+          Foldable furniture and multipurpose solutions.
+        </p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LATEST POSTS -->
+<section class="section">
+  <div class="container">
+
     <h2 class="text-2xl font-bold mb-10 text-center">
       Latest Articles
     </h2>
 
     <Posts posts={currentPosts} className="mb-16" />
     <Pagination currentPage={1} totalPages={totalPages} />
+
   </div>
 </section>
 
