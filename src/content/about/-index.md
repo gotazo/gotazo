@@ -1,23 +1,40 @@
 ---
-title: "I’m John Doe, A content writer based in LDN, Currently at Bookworm"
+title: "About Gotazo"
 meta_title: "About"
 image: "/images/author.png"
 draft: false
 
 what_i_do:
-  title: "What I Do"
+  title: What I Do
   items:
-  - title: "Content Writing"
-    description: "Purus eget ipsum elementum venenatis, quis rutrum mi semper nonpurus eget ipsum elementum venenatis."
-  
-  - title: "Photography"
-    description: "Aenean maximus urna magna elementum, quis rutrum mi semper non purus eget ipsum venenatis."
-  
-  - title: "Web Research"
-    description: "Aenean maximus urna magna elementum venenatis, quis semper non purus eget ipsum venenatis."
-
+    - title: Content Writing
+      description: Purus eget ipsum elementum venenatis, quis rutrum mi semper
+        nonpurus eget ipsum elementum venenatis.
+    - title: Photography
+      description: Aenean maximus urna magna elementum, quis rutrum mi semper non
+        purus eget ipsum venenatis.
+    - title: Web Research
+      description: Aenean maximus urna magna elementum venenatis, quis semper non
+        purus eget ipsum venenatis.
 ---
+Gotazo is a practical buying guide focused on smart living in small Indian apartments.
 
-A content writer with over 12 years experience working across brand identity, publishing and digital products. Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis quis non purus.
+We research and review compact furniture, space-saving home products, and functional solutions designed specifically for 1BHK and small 2BHK homes.
 
-Purus eget ipsum elementum venenatis. Aenean maximus urna magna elementum venenatis, quis rutrum mi semper non purus eget ipsum elementum venenatis, aenean maximus urna magna elementum.
+Our goal is simple:
+
+To help you choose the right products that fit your space — not just your budget.
+
+Many online recommendations ignore apartment constraints like room width, depth clearance, and storage limitations. At Gotazo, we prioritize:
+
+Real product dimensions
+
+Small-space suitability
+
+Practical buying advice
+
+Budget-conscious options
+
+All content is created to simplify decision-making and help you avoid costly purchasing mistakes.
+
+If you have questions, suggestions, or feedback, feel free to reach out through our Contact page.
