@@ -1,7 +1,7 @@
 ---
 title: "About Gotazo"
 meta_title: "About"
-image: "/images/author.png"
+image: "/images/small-room-measurment.jpg"
 draft: false
 
 what_i_do:
