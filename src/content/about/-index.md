@@ -2,14 +2,14 @@
 title: "About Gotazo"
 meta_title: "About"
 image: "/images/author.png"
-draft: false
+draft: true
 
 what_i_do:
   title: What I Do
   items:
-    - title: Content Writing
-      description: Purus eget ipsum elementum venenatis, quis rutrum mi semper
-        nonpurus eget ipsum elementum venenatis.
+    - title: Compact Furniture Reviews
+      description: We review sofas, sofa cum beds, coffee tables, and other furniture
+        designed specifically for small apartments and 1BHK homes.
     - title: Photography
       description: Aenean maximus urna magna elementum, quis rutrum mi semper non
         purus eget ipsum venenatis.
