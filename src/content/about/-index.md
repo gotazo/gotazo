@@ -5,14 +5,14 @@ image: "/images/author.png"
 draft: true
 
 what_i_do:
-  title: What I Do
+  title: What we Do at Gotazo
   items:
     - title: Compact Furniture Reviews
       description: We review sofas, sofa cum beds, coffee tables, and other furniture
         designed specifically for small apartments and 1BHK homes.
-    - title: Photography
-      description: Aenean maximus urna magna elementum, quis rutrum mi semper non
-        purus eget ipsum venenatis.
+    - title: Space-Saving Product Guides
+      description: Our guides focus on real product dimensions, ensuring the furniture
+        fits comfortably in compact living rooms and bedrooms.
     - title: Web Research
       description: Aenean maximus urna magna elementum venenatis, quis semper non
         purus eget ipsum venenatis.
