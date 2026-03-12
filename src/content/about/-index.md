@@ -2,7 +2,7 @@
 title: "About Gotazo"
 meta_title: "About"
 image: "/images/author.png"
-draft: true
+draft: false
 
 what_i_do:
   title: What we Do at Gotazo
@@ -13,9 +13,9 @@ what_i_do:
     - title: Space-Saving Product Guides
       description: Our guides focus on real product dimensions, ensuring the furniture
         fits comfortably in compact living rooms and bedrooms.
-    - title: Web Research
-      description: Aenean maximus urna magna elementum venenatis, quis semper non
-        purus eget ipsum venenatis.
+    - title: Practical Buying Advice
+      description: We simplify buying decisions by comparing budget-friendly products
+        that work well in small Indian apartments.
 ---
 Gotazo is a practical buying guide focused on smart living in small Indian apartments.
 
