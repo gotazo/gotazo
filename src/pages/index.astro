@@ -15,49 +15,51 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 <Base title="Gotazo | Smart Furniture Buying Guides">
 
 <!-- HERO -->
-<section class="section text-center bg-gray-50">
+<section class="hero-section text-center">
   <div class="container max-w-3xl">
 
-    <h1 class="text-4xl font-bold mb-4">
+    <h1 class="hero-title">
       Smart Furniture Buying Guides for Small Apartments
     </h1>
 
-    <p class="text-lg text-gray-600 mb-6">
-      Discover compact sofas, sofa cum beds, coffee tables, and practical furniture designed for small homes and 1BHK apartments.
+    <p class="hero-subtitle">
+      Discover compact sofas, sofa cum beds, coffee tables, and space-saving
+      furniture designed specifically for 1BHK and small apartment living.
     </p>
 
-    <a href="/categories/living-room" class="btn btn-primary">
-      Explore Sofa Guides
-    </a>
+    <div class="hero-cta">
+      <a href="/categories/living-room" class="btn btn-primary">
+        Explore Sofa Guides
+      </a>
+    </div>
 
   </div>
 </section>
+
 
 <!-- FEATURED GUIDES -->
 <section class="section">
   <div class="container">
 
-    <h2 class="text-2xl font-bold mb-8 text-center">
-      Featured Guides
+    <h2 class="section-title text-center mb-8">
+      Featured Buying Guides
     </h2>
 
     <div class="grid md:grid-cols-2 gap-8">
 
-      <a href="/best-sofa-small-living-room" class="block p-6 border rounded-lg hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-2">
-          Best Sofa for Small Living Room Under ₹20,000
-        </h3>
-        <p class="text-gray-600">
-          Compact sofas designed for small apartments.
+      <a href="/best-sofa-small-living-room" class="guide-card">
+        <h3>Best Sofa for Small Living Room Under ₹20,000</h3>
+        <p>
+          Carefully selected compact sofas that fit small apartment living rooms
+          without overcrowding your space.
         </p>
       </a>
 
-      <a href="/best-sofa-cum-beds-1bhk" class="block p-6 border rounded-lg hover:shadow-lg">
-        <h3 class="text-xl font-semibold mb-2">
-          Best Budget Sofa Cum Beds for 1BHK Apartments
-        </h3>
-        <p class="text-gray-600">
-          Space-saving sofa beds perfect for compact homes.
+      <a href="/best-sofa-cum-beds-1bhk" class="guide-card">
+        <h3>Best Budget Sofa Cum Beds for 1BHK Apartments</h3>
+        <p>
+          Multi-functional sofa beds that save space and provide comfortable
+          seating and sleeping in compact homes.
         </p>
       </a>
 
@@ -65,36 +67,31 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 
   </div>
 </section>
+
 
 <!-- BROWSE CATEGORIES -->
 <section class="section">
   <div class="container">
 
-    <h2 class="text-2xl font-bold mb-8 text-center">
+    <h2 class="section-title text-center mb-8">
       Browse Furniture Guides
     </h2>
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <a href="/categories/living-room" class="p-6 border rounded-lg hover:shadow-lg block">
-        <h3 class="text-xl font-semibold mb-2">Living Room</h3>
-        <p class="text-gray-600">
-          Sofas, sofa beds, coffee tables, and TV units.
-        </p>
+      <a href="/categories/living-room" class="category-card">
+        <h3>Living Room</h3>
+        <p>Sofas, sofa beds, coffee tables, and compact TV units.</p>
       </a>
 
-      <a href="/categories/bedroom" class="p-6 border rounded-lg hover:shadow-lg block">
-        <h3 class="text-xl font-semibold mb-2">Bedroom</h3>
-        <p class="text-gray-600">
-          Storage beds and compact wardrobes.
-        </p>
+      <a href="/categories/bedroom" class="category-card">
+        <h3>Bedroom</h3>
+        <p>Storage beds, compact wardrobes, and bedroom furniture.</p>
       </a>
 
-      <a href="/categories/space-saving" class="p-6 border rounded-lg hover:shadow-lg block">
-        <h3 class="text-xl font-semibold mb-2">Space Saving</h3>
-        <p class="text-gray-600">
-          Foldable furniture and multipurpose solutions.
-        </p>
+      <a href="/categories/space-saving" class="category-card">
+        <h3>Space Saving</h3>
+        <p>Foldable furniture and multi-purpose solutions.</p>
       </a>
 
     </div>
@@ -102,11 +99,12 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
   </div>
 </section>
 
+
 <!-- LATEST POSTS -->
 <section class="section">
   <div class="container">
 
-    <h2 class="text-2xl font-bold mb-10 text-center">
+    <h2 class="section-title text-center mb-10">
       Latest Articles
     </h2>
 
@@ -117,3 +115,77 @@ const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 </section>
 
 </Base>
+
+
+<style>
+
+.hero-section{
+  background:#f0fbf9;
+  padding:90px 20px;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.hero-title{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.hero-subtitle{
+  font-size:18px;
+  color:#666;
+  max-width:650px;
+  margin:auto;
+}
+
+.hero-cta{
+  margin-top:30px;
+}
+
+.section-title{
+  font-size:28px;
+  font-weight:700;
+}
+
+/* guide cards */
+
+.guide-card{
+  padding:30px;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  transition:0.25s;
+  display:block;
+}
+
+.guide-card:hover{
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transform:translateY(-3px);
+}
+
+.guide-card h3{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+/* category cards */
+
+.category-card{
+  padding:28px;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+  display:block;
+  transition:0.25s;
+}
+
+.category-card:hover{
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.category-card h3{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+</style>
