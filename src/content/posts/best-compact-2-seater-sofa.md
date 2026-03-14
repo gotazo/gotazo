@@ -1,12 +1,14 @@
 ---
 title: "Best Compact 2-Seater Sofa Under ₹15,000 in India (2026 Guide)"
-description: "Space-saving 2-seater sofas suitable for small living rooms and studio apartments."
+description: "Space-saving 2-seater sofas suitable for small apartments."
+date: 2026-03-12
 categories:
   - living-room
   - buying-guides
 tags:
-  - 2 seater sofa
-  - compact furniture
+  - sofa
+  - compact sofa
+  - small living room
 ---
 
 **Disclosure:** This article contains affiliate links.
