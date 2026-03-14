@@ -1,6 +1,7 @@
 ---
 title: "Best Budget Sofa Cum Beds for 1BHK Apartments in India (2026 Guide)"
 description: "Affordable sofa cum beds under ₹10,000 suitable for small apartments and compact living rooms."
+date: 2026-03-10
 categories:
   - living-room
   - buying-guides
