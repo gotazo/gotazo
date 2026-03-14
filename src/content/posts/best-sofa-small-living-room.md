@@ -1,6 +1,7 @@
 ---
 title: "Best Sofa for Small Living Room Under ₹20,000 in India (2026 Guide)"
 description: "Compact sofas and sofa cum beds suitable for small Indian apartments and 1BHK homes."
+date: 2026-03-11
 categories:
   - living-room
   - buying-guides
