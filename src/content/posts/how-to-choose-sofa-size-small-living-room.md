@@ -1,6 +1,7 @@
 ---
 title: "How to Choose the Right Sofa Size for a Small Living Room (Complete Dimension Guide)"
 description: "Learn the ideal sofa width, depth, and dimensions for small living rooms and 1BHK apartments."
+date: 2026-03-13
 categories:
   - living-room
   - buying-guides
