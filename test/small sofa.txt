@@ -1,0 +1,184 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Button from "../../components/ui/Button.astro";
+---
+
+<Layout title="Best Sofas for Small Living Rooms">
+
+<section class="py-24 max-w-6xl mx-auto">
+
+  <!-- 🧠 HEADER -->
+  <div class="text-center">
+    <h1 class="text-4xl font-semibold">
+      Best Sofas for Small Living Rooms (2026)
+    </h1>
+
+    <p class="mt-4 text-zinc-400 max-w-2xl mx-auto">
+      Compact, space-saving sofas that actually fit small apartments and 1BHK homes.
+    </p>
+  </div>
+
+  <!-- 🔥 TOOL CTA -->
+  <div class="mt-10 bg-zinc-900 p-6 rounded-2xl text-center">
+    <h2 class="text-xl font-semibold">
+      Not sure which sofa fits your room?
+    </h2>
+
+    <a href="/tools/sofa-fit-calculator"
+       class="inline-block mt-4 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 transition rounded-xl font-medium">
+       Check Sofa Fit →
+    </a>
+  </div>
+
+  <!-- 📊 COMPARISON TABLE -->
+  <div class="mt-16 overflow-x-auto">
+    <table class="w-full text-sm border border-zinc-700 rounded-xl overflow-hidden">
+      <thead class="bg-zinc-800">
+        <tr>
+          <th class="p-3 text-left">Sofa</th>
+          <th class="p-3">Best For</th>
+          <th class="p-3">Size</th>
+          <th class="p-3">Rating</th>
+          <th class="p-3">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr class="border-t border-zinc-700">
+          <td class="p-3">Uberlyfe 2-Seater</td>
+          <td class="p-3">Best Compact</td>
+          <td class="p-3">140–150 cm</td>
+          <td class="p-3">⭐⭐⭐⭐☆</td>
+          <td class="p-3">
+            <Button href="https://amzn.to/4aA21NY" variant="amazon" size="sm">
+              View →
+            </Button>
+          </td>
+        </tr>
+
+        <tr class="border-t border-zinc-700">
+          <td class="p-3">Adorn India</td>
+          <td class="p-3">Best Value</td>
+          <td class="p-3">150–170 cm</td>
+          <td class="p-3">⭐⭐⭐⭐☆</td>
+          <td class="p-3">
+            <Button href="https://amzn.to/3P0GpSo" variant="amazon" size="sm">
+              View →
+            </Button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 🏆 BEST PICK -->
+  <div class="mt-16 bg-zinc-900 p-8 rounded-2xl text-center border border-zinc-800">
+    <h2 class="text-2xl font-semibold">
+      🏆 Best Overall Pick
+    </h2>
+
+    <p class="mt-2 text-zinc-400">
+      Uberlyfe 2-Seater — perfect for very small living rooms.
+    </p>
+
+    <p class="text-sm text-green-400 mt-2">
+      ✔ Most space-efficient choice
+    </p>
+
+    <Button href="https://amzn.to/4aA21NY" variant="amazon" size="lg">
+      🔥 Check Price →
+    </Button>
+  </div>
+
+  <!-- 🛋️ PRODUCT GRID -->
+  <div class="mt-16 grid md:grid-cols-2 gap-8">
+
+    <!-- PRODUCT 1 -->
+    <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 hover:shadow-xl transition">
+
+      <span class="text-xs bg-indigo-500 px-2 py-1 rounded-md">
+        Best Compact
+      </span>
+
+      <img src="/images/sofa1.jpg" alt="Uberlyfe Sofa" class="rounded-xl mt-4 mb-4">
+
+      <h3 class="text-xl font-semibold">
+        Uberlyfe 2-Seater Sofa
+      </h3>
+
+      <p class="text-sm text-zinc-400 mt-2">
+        Best for tight spaces and compact rooms.
+      </p>
+
+      <p class="mt-2 text-yellow-400">⭐⭐⭐⭐☆ (4.1)</p>
+
+      <ul class="mt-4 text-sm text-zinc-300 space-y-1">
+        <li>✔ Compact size</li>
+        <li>✔ Lightweight</li>
+        <li>✔ Budget-friendly</li>
+      </ul>
+
+      <div class="mt-6">
+        <Button href="https://amzn.to/4aA21NY" variant="amazon" size="lg">
+          View on Amazon →
+        </Button>
+      </div>
+
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 hover:shadow-xl transition">
+
+      <span class="text-xs bg-green-500 px-2 py-1 rounded-md">
+        Best Value
+      </span>
+
+      <img src="/images/sofa2.jpg" alt="Adorn Sofa" class="rounded-xl mt-4 mb-4">
+
+      <h3 class="text-xl font-semibold">
+        Adorn India Sofa Cum Bed
+      </h3>
+
+      <p class="text-sm text-zinc-400 mt-2">
+        Great mix of comfort and functionality.
+      </p>
+
+      <p class="mt-2 text-yellow-400">⭐⭐⭐⭐☆ (4.2)</p>
+
+      <ul class="mt-4 text-sm text-zinc-300 space-y-1">
+        <li>✔ Dual purpose</li>
+        <li>✔ Comfortable</li>
+        <li>✔ Space-saving</li>
+      </ul>
+
+      <div class="mt-6">
+        <Button href="https://amzn.to/3P0GpSo" variant="amazon" size="lg">
+          View on Amazon →
+        </Button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 🔥 FINAL CTA -->
+  <div class="mt-20 text-center">
+    <h3 class="text-2xl font-semibold">
+      Still unsure?
+    </h3>
+
+    <p class="text-zinc-400 mt-2">
+      Measure your space before buying.
+    </p>
+
+    <a href="/tools/sofa-fit-calculator"
+       class="inline-block mt-4 px-6 py-3 bg-indigo-500 rounded-xl">
+       Use Sofa Fit Calculator →
+    </a>
+  </div>
+
+</section>
+
+</Layout>

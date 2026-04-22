@@ -1,0 +1,50 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides");
+  const categories = [
+    ...new Set(
+      guides
+        .map((guide) => guide.data.category)
+        .filter((category): category is string => Boolean(category))
+    ),
+  ];
+
+  return categories.map((category) => ({
+    params: { category },
+    props: {
+      category,
+      guides: guides.filter((guide) => guide.data.category === category),
+    },
+  }));
+}
+
+interface Props {
+  category: string;
+  guides: CollectionEntry<"guides">[];
+}
+
+const { category, guides } = Astro.props;
+---
+
+<Layout title={`${category} Guides`}>
+  <section class="py-20 max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl font-semibold text-center mb-12 capitalize">
+      {category}
+    </h1>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {guides.map((g) => (
+        <a
+          href={`/guides/${g.id}`}
+          class="block bg-zinc-900 p-6 rounded-2xl hover:bg-zinc-800 transition"
+        >
+          <h2 class="text-lg font-semibold">{g.data.title}</h2>
+          <p class="text-zinc-400 mt-2 text-sm">{g.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

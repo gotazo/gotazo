@@ -1,0 +1,17 @@
+---
+const { title, description, image, link } = Astro.props;
+---
+
+<div class="bg-zinc-900 p-5 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+  <img src={image} alt={title} class="rounded-xl" />
+
+  <h3 class="mt-4 font-semibold">{title}</h3>
+
+  <p class="text-sm text-zinc-400 mt-1">
+    {description}
+  </p>
+
+  <a href={link} class="mt-4 block text-center px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-600 transition">
+    Check Price
+  </a>
+</div>

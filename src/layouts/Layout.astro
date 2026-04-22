@@ -1,0 +1,28 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/ui/Navbar.astro";
+import Footer from "../components/ui/Footer.astro";
+
+const { title = "Gotazo" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- 🔝 NAVBAR -->
+      <Navbar />
+
+      <!-- 📄 PAGE CONTENT (hero + sections come here) -->
+      <slot />
+
+      <!-- 🔻 FOOTER -->
+      <Footer />
+    </main>
+  </body>
+</html>

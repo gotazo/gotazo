@@ -1,0 +1,52 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides");
+
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide },
+  }));
+}
+
+interface Props {
+  guide: CollectionEntry<"guides">;
+}
+
+const { guide } = Astro.props;
+
+/* ✅ FIX: include headings safely */
+const { Content, headings } = await render(guide);
+
+const allGuides = await getCollection("guides");
+const guideCategory = guide.data.category;
+
+/* RELATED */
+const relatedByCategory = allGuides
+  .filter(
+    (g) =>
+      g.id !== guide.id &&
+      guideCategory !== undefined &&
+      g.data.category === guideCategory
+  )
+  .slice(0, 3);
+
+const fallback = allGuides
+  .filter((g) => g.id !== guide.id)
+  .slice(0, 3);
+
+const relatedGuides =
+  relatedByCategory.length > 0 ? relatedByCategory : fallback;
+---
+
+<GuideLayout
+  title={guide.data.title}
+  guides={allGuides}
+  related={relatedGuides}
+  headings={headings}  <!-- ✅ NEW -->
+>
+  <p class="text-zinc-400">{guide.data.description}</p>
+  <Content />
+</GuideLayout>

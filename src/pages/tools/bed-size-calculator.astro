@@ -1,0 +1,118 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Bed Size Calculator">
+
+<section class="py-24 max-w-3xl mx-auto">
+
+  <!-- 🧠 TITLE -->
+  <div class="text-center">
+    <h1 class="text-4xl font-semibold">
+      Bed Size Calculator
+    </h1>
+
+    <p class="mt-4 text-zinc-400">
+      Check if your bed fits your bedroom before buying.
+    </p>
+  </div>
+
+  <!-- 🧩 CARD -->
+  <div class="mt-12 bg-zinc-900 p-8 rounded-2xl shadow-xl">
+
+    <!-- INPUTS -->
+    <div class="grid gap-6">
+
+      <!-- ROOM WIDTH -->
+      <div>
+        <label class="text-sm text-zinc-400">Room Width (cm)</label>
+        <input id="roomWidth" type="number" value="300"
+          class="w-full mt-2 p-3 rounded-lg bg-zinc-800 border border-zinc-700" />
+      </div>
+
+      <!-- ROOM DEPTH -->
+      <div>
+        <label class="text-sm text-zinc-400">Room Depth (cm)</label>
+        <input id="roomDepth" type="number" value="300"
+          class="w-full mt-2 p-3 rounded-lg bg-zinc-800 border border-zinc-700" />
+      </div>
+
+      <!-- BED TYPE -->
+      <div>
+        <label class="text-sm text-zinc-400">Select Bed Size</label>
+        <select id="bedType"
+          class="w-full mt-2 p-3 rounded-lg bg-zinc-800 border border-zinc-700">
+          <option value="single">Single (90×190 cm)</option>
+          <option value="queen">Queen (150×200 cm)</option>
+          <option value="king">King (180×200 cm)</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="calculateBedFit()" 
+      class="mt-8 w-full py-3 rounded-xl bg-indigo-500 hover:bg-indigo-600 transition font-medium">
+      Check Fit
+    </button>
+
+    <!-- RESULT -->
+    <div id="result" class="mt-8 text-center text-lg"></div>
+
+    <!-- TIP -->
+    <p class="text-sm text-zinc-500 mt-2 text-center">
+      Recommended: Keep at least 60–75 cm walking space.
+    </p>
+
+    <!-- 💰 CTA -->
+    <div class="mt-6 text-center">
+      <a href="/bedroom/beds"
+         class="inline-block px-6 py-3 bg-green-500 hover:bg-green-600 transition rounded-xl font-medium">
+         View Beds That Fit →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function calculateBedFit() {
+    const roomWidth = parseFloat(document.getElementById('roomWidth').value);
+    const roomDepth = parseFloat(document.getElementById('roomDepth').value);
+    const bedType = document.getElementById('bedType').value;
+
+    const resultDiv = document.getElementById('result');
+
+    if (!roomWidth || !roomDepth) {
+      resultDiv.innerHTML = "⚠️ Please fill all fields";
+      return;
+    }
+
+    let bedWidth, bedDepth;
+
+    if (bedType === "single") {
+      bedWidth = 90;
+      bedDepth = 190;
+    } else if (bedType === "queen") {
+      bedWidth = 150;
+      bedDepth = 200;
+    } else {
+      bedWidth = 180;
+      bedDepth = 200;
+    }
+
+    const remainingWidth = roomWidth - bedWidth;
+    const remainingDepth = roomDepth - bedDepth;
+
+    if (remainingWidth >= 60 && remainingDepth >= 60) {
+      resultDiv.innerHTML = `✅ Fits comfortably! Space left: ${remainingWidth} cm (W), ${remainingDepth} cm (D)`;
+    } else if (remainingWidth >= 30 && remainingDepth >= 30) {
+      resultDiv.innerHTML = `⚠️ Tight fit. Limited walking space.`;
+    } else {
+      resultDiv.innerHTML = `❌ Not recommended. Bed is too large for your room.`;
+    }
+  }
+</script>
+
+</Layout>
